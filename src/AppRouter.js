@@ -12,7 +12,7 @@ import MyProfile from './routes/MyProfile';
 function AppRouter({isLoggedIn, userObj, me, user}) {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes isLoggedIn={isLoggedIn}>
         {isLoggedIn ?
         (<Route path="/" element={<Main me={me} user={user} userObj={userObj}/>} />)
