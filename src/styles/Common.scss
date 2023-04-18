@@ -1,0 +1,11 @@
+@import url(./reset.scss);
+
+*{font-size: 12px;}
+
+a:link,a:visited{color: #000; text-decoration: none;}
+a:hover,a:focus,a:active{color: #000; text-decoration: none;}
+img{max-width: 100%;}
+
+.empty{display: block; width: 40px; height: 40px; margin: 10px 15px; border-radius: 50%;
+  background: url(../images/empty.jpg) no-repeat 0 0; background-size: cover;}
+

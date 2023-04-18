@@ -1,0 +1,50 @@
+@import url(reset.scss);
+
+.bg{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  .logo{
+    position: absolute; left: 50%; top: 300px;
+    transform: translateX(-50%);
+    background: url(../images/logo.png.png) no-repeat center/cover;
+    width: 100px;
+    height: 100px;
+  }
+  form{
+    position: absolute; top: 430px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column;
+    input{
+      width: 200px; height: 40px;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 10px;
+      margin: 5px 0;
+      padding: 10px;
+      box-sizing: border-box;
+      &::placeholder{font-size: 15px;}
+      &:last-of-type{
+        cursor: pointer;
+        height: 35px;
+        background: #3B1E1E;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.toggleAccount{display: block; position: relative; top: 590px; left: 50%; width: 70px; transform: translateX(-50%); text-align: center; font-size: 16px; font-weight: 600; cursor: pointer;}
+
+.social{
+  position: relative; top: 600px; left: 50%;
+  display: flex;
+  width: 220px;
+  transform: translateX(-50%);
+  button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #333;
+    &:first-of-type{margin-right: 10px;}  
+  }
+}

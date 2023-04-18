@@ -1,0 +1,40 @@
+.newChat{
+  display: inline-flex; flex-direction: column; 
+  max-width: calc(100% - 80px);
+  position: relative;
+  align-self: flex-end; align-items: flex-end; 
+  width: 240px; 
+  margin-right: 10px;
+
+  .chatEdit{
+    .formInput{
+
+    }
+    .formBtn{
+
+    }
+  }
+  .btns{
+        
+    }
+  .chat{
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background: #ffe73a;
+  }
+  .img{
+    width: 100px; height: 100px;
+  }
+  .btns{
+    background: transparent;
+    margin-right: 10px;
+  }
+  .chat_time{
+    position: relative; top: -20px;
+    margin-right: 215px;
+    width: 50px;
+    opacity: 0.5;
+  }
+}

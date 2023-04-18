@@ -1,0 +1,65 @@
+
+[
+  {
+    "id":"1",
+    "name":"해린",
+    "imgs":"https://i.pinimg.com/564x/f0/f7/d1/f0f7d1d39210d4ddfcc008ba843c000d.jpg",
+    "msg":"야옹",
+    "email":"newjeans@haerin.com",
+    "chats":[
+      "뉴진스의",
+      "하입보이요 커즈 아아아아",
+      "..."
+    ]
+  },
+  {
+    "id":"2",
+    "name":"하니",
+    "imgs":"https://i.pinimg.com/564x/63/02/1b/63021b6e482b819d5f497037613e44f4.jpg",
+    "msg":"깡총!",
+    "email":"newjeans@hanni.com",
+    "chats":[
+      "서연아",
+      "이따 꾀배기 사 먹을래?",
+      "ㅋㅋ"
+    ]
+  },
+  {
+    "id":"3",
+    "name":"민지",
+    "imgs":"https://i.pinimg.com/564x/7a/15/34/7a1534d08659e0cde34e226eb4aa88b7.jpg",
+    "msg":"깡총",
+    "email":"newjeans@minji.com",
+    "chats":[
+      "서연아",
+      "나는 고양이야, 강아지야?",
+      "강아지겠지?"
+    ]
+
+  },
+  {
+    "id":"4",
+    "name":"혜인",
+    "imgs":"https://i.pinimg.com/564x/9c/e1/1e/9ce11ed4d1ebba6f863306cd6217c3d5.jpg",
+    "msg":"깡총깡총!",
+    "email":"newjeans@hyein.com",
+    "chats":[
+      "좋은 하루 되세요",
+      "가는 말이 고와야 오는 말이",
+      "곱다"
+    ]
+
+  },
+  {
+    "id":"5",
+    "name":"다니엘",
+    "imgs":"https://i.pinimg.com/564x/46/12/b0/4612b0062df4f7486abc82686d3bb024.jpg",
+    "msg":"헤헤",
+    "email":"newjeans@daniel.com",
+    "chats":[
+      "딥티크의 탐다오와 플레르 드 뽀",
+      "우디하거나 혹은 포근한 향이 느껴져요",
+      "좋아요"
+    ]
+  }
+]
