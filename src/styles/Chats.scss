@@ -2,7 +2,6 @@
 
 main{height: 85.8%; padding-top: 64px;}
 
-// .tab_bar>ul>li:nth-of-type(2)>a{color: #543736;}
 
 .srch_box{
   display: flex; justify-content: center; 
@@ -45,9 +44,9 @@ main{height: 85.8%; padding-top: 64px;}
 }
 
 .chat_fa_btn{
-  position: fixed; right: 20px; bottom: 80px;
+  position: fixed; right: 20px; bottom: 100px;
   a{display: flex; justify-content: center; align-items: center; width: 60px; height: 60px;
-    background: #ffe84c; border-radius: 50%; box-shadow: 0 2px 6px #0004; font-size: 18px; color: #513736;
+    background: #fff; color: #44385a; border-radius: 50%; box-shadow: 0 2px 6px #0004; font-size: 18px;
     transition: all .3s linear;}
-  &:hover>a{background: #513736; color: #ffe84c;}
+  &:hover>a{color: #756d84;}
 }

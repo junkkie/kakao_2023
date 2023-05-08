@@ -41,14 +41,13 @@ function Profile() {
             <input type="mail" className="profile_email" placeholder={user.email}/>
             <ul className="profile_menu">
             <li>
-              <a href="#">
+              <Link to='/chatroom' state={user}>
                 <span className="icon">
                   <i className="fa-solid fa-comment"></i>
                 </span>
-                My Chatroom
-              </a>
+                대화하기
+              </Link>
             </li>
-            <li><a href="#"><span className="icon"><i className="fa-solid fa-pencil"></i></span>Edit Profile</a></li>
             </ul>
           </div>
         </section>

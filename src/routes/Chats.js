@@ -8,13 +8,13 @@ function Chats({user}) {
   
   return (
     <div>
-      <Header title={'chats'} left={'Edit'} />
+      <Header title={'채팅'} left={'Edit'} />
         <main>
           <form action="/" class="srch_box">
             <fieldset class="srch_inner">
               <legend class="blind">검색</legend>
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="search" name="search" placeholder="Find friends, chats, Plus friends" />
+              <input type="search" name="search" placeholder="친구, 플러스친구, 채팅 검색" />
             </fieldset>
           </form>
 

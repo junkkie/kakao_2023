@@ -6,10 +6,10 @@ function Tab() {
   return (
     <nav class="tab_bar">
       <ul>
-      <li><Link to='/'><i class="fa-solid fa-user"></i>Friends</Link></li>
-      <li><Link to='/chats'><i class="fa-solid fa-comment"></i>Chats</Link></li>
-      <li><Link to='/find'><i class="fa-solid fa-magnifying-glass"></i>Find</Link></li>
-      <li><Link to='/more'><i class="fa-solid fa-ellipsis"></i>More</Link></li>
+      <li><Link to='/'>친구</Link></li>
+      <li><Link to='/chats'>채팅</Link></li>
+      <li><Link to='/find'>찾기</Link></li>
+      <li><Link to='/more'>더보기</Link></li>
       </ul> 
     </nav>
   )

@@ -6,20 +6,20 @@ import '../styles/Find.scss'
 function Find() {
   return (
     <div>
-      <Header title={'Find'} left={'Edit'}/>
+      <Header title={'찾기'} left={'Edit'}/>
       <main>
         <ul class="find_method">
-          <li><a href="#"><i class="fa-solid fa-address-book"></i>Find</a></li>
-          <li><a href="#"><i class="fa-solid fa-qrcode"></i>QR Code</a></li>
-          <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Shake</a></li>
-          <li><a href="#"><i class="fa-regular fa-envelope"></i>Invite via SMS</a></li>
+          <li><a href="#"><i class="fa-solid fa-address-book"></i>찾기</a></li>
+          <li><a href="#"><i class="fa-solid fa-qrcode"></i>QR코드</a></li>
+          <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i>흔들기</a></li>
+          <li><a href="#"><i class="fa-regular fa-envelope"></i>문자로 초대하기</a></li>
         </ul>
       </main>
 
       <div class="recommend_section">
-        <header><h2>Recommended Friends</h2></header>
+        <header><h2>추천 친구</h2></header>
         <ul>
-          <li>You Have no Recommended friends.</li>
+          <li>추천 친구가 비활성화되었습니다.</li>
         </ul>
       </div>
       <Tab />

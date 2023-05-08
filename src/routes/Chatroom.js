@@ -15,6 +15,8 @@ function Chatroom({userObj, me}) {
   const [chat, setChat] = useState('');
   const [attachment, setAttachment] = useState("");
   const [allChats, setAllChats] = useState([]);
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
 
   useEffect(() =>{
     const q = query(collection(db, "chats"), orderBy("createdAt", "desc"));
@@ -47,7 +49,7 @@ function Chatroom({userObj, me}) {
         console.log("attachmentUrl >",attachmentUrl);
       }
       
-      // 채팅
+      //submit
       const docRef = await addDoc(collection(db, "chats"), {
         text: chat,
         createdAt: Date.now(),
@@ -80,6 +82,26 @@ function Chatroom({userObj, me}) {
     setAttachment("");
   }
 
+  useEffect (() =>{
+    const now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth() + 1;
+    let day = now.getDate();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    if(day<10){
+      day = "0" + day;
+    }
+    if(hour<10){
+      hour = "0" + hour 
+    }
+    if(minute<10){
+      minute = "0" + minute
+    }
+    setDate(year + "년" + " " + month + "월" + " " + day + "일")
+    setTime(hour + " : " + minute)
+  },[]);
+
   return (
     <div className='bg'>
       <header className='Chatroom_header'>
@@ -89,7 +111,7 @@ function Chatroom({userObj, me}) {
             <i class="fa-solid fa-wifi"></i>
           </div>
           <div className="center_item">
-            <span>15</span>:<span>33</span>
+            <span>{time}</span>
           </div>
           <div className="right_item">
             <i class="fa-regular fa-moon"></i>
@@ -100,13 +122,13 @@ function Chatroom({userObj, me}) {
         </div>
 
         <div className="title_bar">
-          <h1>Friend Name</h1>
+          <h1>{user.name}</h1>
           <div className="left_item"><Link to='/chats'><i class="fa-solid fa-chevron-left"></i></Link></div>
           <div className="right_item"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bars"></i></div>
         </div>
       </header>
       <main className='chatroom_main'>
-        <span className="date_info">Tursday, March 23, 2023</span>
+        <span className="date_info">{date}</span>
         {me.map((me) =>(
           <div className="chat_box my">
             <span className="chat">{me.chat1}</span>
@@ -130,10 +152,9 @@ function Chatroom({userObj, me}) {
           ))}
       </main>
       <footer className='chatroom_footer'>
-        <span className="plus_btn"><i class="fa-solid fa-plus"></i></span>
         <form action="/" method="post" className='chatroom_txtbox' onSubmit={onSubmit}>
           <fieldset className="text_box">
-            <label htmlFor='attachFile'>
+            <label className='file_input' htmlFor='attachFile'>
               <input type='file' id='attachFile' accept='image/*' onChange={onFileChange} />
               {attachment && (
                 <div className='prevImg'>
@@ -145,10 +166,8 @@ function Chatroom({userObj, me}) {
               )}
             </label>
             <label htmlFor="chatting" class="blind">채팅 입력</label>
-            <input type="text" id="chatting" className="text_field" value={chat} placeholder='입력 후 엔터' onChange={onChange} />
+            <input type="text" id="chatting" className="text_field" value={chat} placeholder='입력 후 엔터' onChange={onChange} autoComplete='off' />
             <input type='submit' className='chat_arrow' value='&rarr;' />
-            <span className="emoticon_btn"><i class="fa-regular fa-face-smile"></i></span>
-            <span className="voice_btn"><i class="fa-solid fa-angle-right"></i></span>
           </fieldset>
         </form>
       </footer>

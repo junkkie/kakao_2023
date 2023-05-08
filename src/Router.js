@@ -12,7 +12,7 @@ import MyProfile from './routes/MyProfile';
 function AppRouter({isLoggedIn, userObj, me, user}) {
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes isLoggedIn={isLoggedIn}>
         {isLoggedIn ?
         (<Route path="/" element={<Main me={me} user={user} userObj={userObj}/>} />)
@@ -22,7 +22,7 @@ function AppRouter({isLoggedIn, userObj, me, user}) {
         <Route path="/chatroom" element={<Chatroom user={user} me={me} userObj={userObj} />}/>
         <Route path="/chats" element={<Chats user={user} />}/>
         <Route path="/find" element={<Find />}/>
-        <Route path="/more" element={<More me={me} userObj={userObj} />}/>
+        <Route path="/more" element={<More me={me} />}/>
         <Route path="/profile" element={<Profile user={user} />}/>
         <Route path='/myprofile' element={<MyProfile me={me} userObj={userObj} />}/>
       </Routes>

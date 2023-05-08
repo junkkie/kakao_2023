@@ -53,13 +53,49 @@
   {
     "id":"5",
     "name":"다니엘",
-    "imgs":"https://i.pinimg.com/564x/46/12/b0/4612b0062df4f7486abc82686d3bb024.jpg",
+    "imgs":"https://humor.galaxystorages.com/wp-content/uploads/2023/04/%EB%89%B4%EC%A7%84%EC%8A%A4-%EB%8B%A4%EB%8B%88%EC%97%98-%E2%80%A5.jpeg",
     "msg":"헤헤",
     "email":"newjeans@daniel.com",
     "chats":[
       "딥티크의 탐다오와 플레르 드 뽀",
-      "우디하거나 혹은 포근한 향이 느껴져요",
-      "좋아요"
+      "우디하거나 혹은 포근한 향이 나",
+      "좋아하는 향수"
+    ]
+  },
+  {
+    "id":"6",
+    "name":"반희수",
+    "imgs":"https://flexible.img.hani.co.kr/flexible/normal/970/532/imgdb/original/2022/1226/20221226503445.jpg",
+    "msg":".",
+    "email":"bunny@soo.com",
+    "chats":[
+      "내 이름은",
+      "반희수야",
+      "너 혹시 해린이 알아?"
+    ]
+  },
+  {
+    "id":"7",
+    "name":"손다롱",
+    "imgs":"https://cdn.psnews.co.kr/news/photo/202104/1564847_25761_2521.JPG",
+    "msg":"다롱부릉",
+    "email":"darong@pink.com",
+    "chats":[
+      "다롱다롱즈는",
+      "예쁘다",
+      "제니랑 똑같이 생겼어"
+    ]
+  },
+  {
+    "id":"8",
+    "name":"민동싼",
+    "imgs":"https://cdn.newsculture.press/news/photo/202302/518052_636666_596.jpg",
+    "msg":"민둥민둥",
+    "email":"meen@dong.com",
+    "chats":[
+      "소고기",
+      "맛있다",
+      "소고기 사 줘"
     ]
   }
 ]

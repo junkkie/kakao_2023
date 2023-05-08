@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Header.scss'
 
 function Header({title, titleNum, left, right}) {
+  const [time, setTime] = useState("");
+
+  useEffect (() =>{
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    if(hour<10){
+      hour = "0" + hour 
+    }
+    if(minute<10){
+      minute = "0" + minute
+    }
+    setTime(hour + ":" + minute);
+  },[]);
+
   return (
     <header className='header Chatroom_header'>
 
@@ -11,7 +26,7 @@ function Header({title, titleNum, left, right}) {
           <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="center_item">
-          <span>15</span>:<span>33</span>
+          <span>{time}</span>
         </div>
         <div class="right_item">
           <i class="fa-regular fa-moon"></i>

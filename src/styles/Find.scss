@@ -1,11 +1,10 @@
 @import url(./Common.scss);
 
 .header{
-  background: #513736;
+  background: #3e2d5e;
   *{color: #fff;}
 }
 
-// .tab_bar>ul>li:nth-of-type(3)>a{color: #513736;}
 
 main{
   height: 85.8%; 
@@ -13,15 +12,14 @@ main{
   .find_method{
     display: flex; 
     align-items: center; 
-    height: 80px; 
-    background: #eee;
+    height: 80px;
     li{
       overflow: hidden; 
       flex: 1;
       a{
         display: flex; flex-direction: column; 
         align-items: center; 
-        color: #513736;
+        color: #44385a;
         transition: all .3s linear;
         &:hover{transform: scale(1.05);}
         i{font-size: 22px; margin: 5px 0;}

@@ -32,7 +32,7 @@
     h1{
       order: 2; 
       text-align: center;
-      span{color: #f8ea65; margin-left: 3px;}
+      span{margin-left: 3px;}
     }
     .left_item{
       order: 1; 
@@ -52,9 +52,9 @@
   height: 100vh;
   margin-top: -65px;
   .background{
-    height: 65%; 
-    background: url(../images/bg_default.png) no-repeat 0 0; 
-    background-size: cover;
+    height: 75%; 
+    background: url(../images/bg_default.png) no-repeat center; 
+    background-size: 100%;
   }
   .profile{
     display: flex; justify-content: center; 
@@ -70,10 +70,10 @@
     .profile_menu{
       display: flex;
       li{
-        margin: 0 6px;
+        margin: 0 10px;
         a{display: flex; flex-direction: column; align-items: center; font-weight: bold;}
-        span{display: block; width: 52px; height: 52px; border-radius: 50%; line-height: 52px;
-          text-align: center; margin-bottom: 15px; background: #f2f2f2; color: #513736; font-size: 20px;}
+        span{display: block; width: 52px; height: 52px; border-radius: 50%; line-height: 45px;
+          text-align: center; margin-bottom: 10px; background: #44385a; color: #fff; font-size: 20px;}
       }
     }
   }
