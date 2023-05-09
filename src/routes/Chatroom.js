@@ -155,7 +155,8 @@ function Chatroom({userObj, me}) {
         <form action="/" method="post" className='chatroom_txtbox' onSubmit={onSubmit}>
           <fieldset className="text_box">
             <label className='file_input' htmlFor='attachFile'>
-              <input type='file' id='attachFile' accept='image/*' onChange={onFileChange} />
+              <i class="fa-solid fa-image"></i>
+              <input className='attach_file' type='file' id='attachFile' accept='image/*' onChange={onFileChange} />
               {attachment && (
                 <div className='prevImg'>
                   <img src={attachment} alt='' style={{backgroundImage:attachment}} />

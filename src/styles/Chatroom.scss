@@ -94,8 +94,11 @@
   .chatroom_txtbox{
     display: flex; justify-content: space-between;
     position: absolute; top: 0;
+    .attach_file::-webkit-file-upload-button{opacity: 0;}
     .file_input{
-      input{background: #44385a;}
+      width: 50px; margin-right: 20px;
+      .attach_file{opacity: 0;}
+      i{display: block; position: absolute; left: 30px; top: 13px; font-size: 20px; color: #44385a;}
     } 
     .text_box{position: relative; display: flex; justify-content: flex-end; align-items: center; width: 100vw;}
     .text_field{width: 100%; height: 32px; background: #fff; color: #000;}
