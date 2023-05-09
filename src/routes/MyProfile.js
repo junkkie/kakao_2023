@@ -114,7 +114,7 @@ function MyProfile({me, userObj}) {
 
   //프로필 배경이미지 submit
   const onBackImg = async (e) => {
-    e.preventDefault();
+    e.preventDefault();  
     try {
       let BackImgUrl = "";
       if(backImg !== ""){
@@ -220,8 +220,10 @@ function MyProfile({me, userObj}) {
           </section>
           <section className="profile">
             <h2 className="blind">My Profile info</h2>
-                {newProfile && <div className="profile_img empty" style={{backgroundImage: `url(${newProfile})`}}></div>}
-                <div className="profile_img empty" style={{backgroundImage: `url(${userObj.photoURL})`}}></div>
+            <div className='emptyImg' style={{backgroundImage: 'url(../images/empty.jpg)'}}></div>
+            {newProfile && <div className="profile_img empty" style={{backgroundImage: `url(${newProfile})`}}></div>}
+            <div className="profile_img empty" style={{backgroundImage: `url(${userObj.photoURL})`}}></div>
+            
             <div className="profile_cont">
               {editing &&
                 <form className='profileForm' onSubmit={onSubImg}>

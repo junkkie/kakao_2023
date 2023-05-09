@@ -60,6 +60,11 @@
     display: flex; justify-content: center; 
     position: relative; 
     width: 100%;
+    .emptyImg{
+      position: absolute; left: 50%; top: -65px;
+      width: 100px; height: 100px;
+      margin-left: -50px;
+    }
     .profile_img{position: absolute; left: 50%; top: -65px; width: 100px; height: 100px; margin-left: -50px;}
     .profile_cont{
       display: flex; flex-direction: column; 
