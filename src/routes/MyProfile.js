@@ -37,7 +37,8 @@ function MyProfile({me, userObj}) {
   }
 
   //프로필 submit
-  const onSubInfo = async () => {
+  const onSubInfo = async (e) => {
+    e.preventDefault();
     try {
       //이름
       if(userObj.displayName !== newName){
