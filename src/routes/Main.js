@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Main.scss'
 import { collection, onSnapshot, query } from 'firebase/firestore';
 import { db } from 'fbase';
+import emptyImage from '../images/empty.jpg'
 
 function Main({me, user, userObj}) {
 
@@ -39,6 +40,7 @@ useEffect(() => {
               {me.map((me)=>(
                 <ul>
                   <li><Link to='/myprofile'>
+                    <img className='emptyImg' src={emptyImage} alt='기본 프로필 이미지' />
                     <span class="profile_img empty" style={{backgroundImage: `url(${userObj.photoURL})`}}></span>
                     <span class="profile_name">{userObj.displayName}</span>
                     <span className='profile_messages'>{newMsg}</span>

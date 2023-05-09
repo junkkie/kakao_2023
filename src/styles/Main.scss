@@ -30,6 +30,8 @@ div>main{
       border-left: none;color: #44385a;}
     ul{
       display: flex; flex-direction: column;
+      .emptyImg{position: absolute; left: 15px; width: 40px; height: 40px; border-radius: 50%; z-index: 1;}
+      .profile_img{z-index: 2;}
       li>a{
         display: flex;
         align-items: center; 

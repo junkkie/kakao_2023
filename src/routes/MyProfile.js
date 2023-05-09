@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { ref, getDownloadURL, uploadString, deleteObject } from 'firebase/storage';
 import { collection, deleteDoc, doc, onSnapshot, query, setDoc, updateDoc } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
+import emptyImage from '../images/empty.jpg'
 
 function MyProfile({me, userObj}) {
   const navigate = useNavigate();
@@ -220,9 +221,9 @@ function MyProfile({me, userObj}) {
           </section>
           <section className="profile">
             <h2 className="blind">My Profile info</h2>
-            <div className='emptyImg' style={{backgroundImage: 'url(../images/empty.jpg)'}}></div>
-            {newProfile && <div className="profile_img empty" style={{backgroundImage: `url(${newProfile})`}}></div>}
+            <img className='emptyImg' src={emptyImage} alt='기본 프로필 이미지' />
             <div className="profile_img empty" style={{backgroundImage: `url(${userObj.photoURL})`}}></div>
+            <div className="profile_img empty" style={{backgroundImage: `url(${newProfile})`}}></div>
             
             <div className="profile_cont">
               {editing &&
