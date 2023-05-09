@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kakkao_2023/static/css/main.0a12c144.css",
-    "main.js": "/kakkao_2023/static/js/main.c55795f2.js",
-    "static/media/tab_icon.jpg": "/kakkao_2023/static/media/tab_icon.cca5723f5c7850b8ea3b.jpg",
-    "static/media/kakaofriends.png": "/kakkao_2023/static/media/kakaofriends.84375bb9f89d79ccd760.png",
-    "static/media/path.png": "/kakkao_2023/static/media/path.7d00edf73f07bdcecc6d.png",
-    "static/media/kakaostory.png": "/kakkao_2023/static/media/kakaostory.572f3ce5bf10fbdaac9d.png",
-    "static/media/bg_default.png": "/kakkao_2023/static/media/bg_default.82687b4e75ad8b89fa96.png",
-    "index.html": "/kakkao_2023/index.html",
-    "main.0a12c144.css.map": "/kakkao_2023/static/css/main.0a12c144.css.map",
-    "main.c55795f2.js.map": "/kakkao_2023/static/js/main.c55795f2.js.map"
+    "main.css": "/kakao_2023/static/css/main.8ef14800.css",
+    "main.js": "/kakao_2023/static/js/main.b6489a1b.js",
+    "static/media/tab_icon.jpg": "/kakao_2023/static/media/tab_icon.cca5723f5c7850b8ea3b.jpg",
+    "static/media/kakaofriends.png": "/kakao_2023/static/media/kakaofriends.84375bb9f89d79ccd760.png",
+    "static/media/path.png": "/kakao_2023/static/media/path.7d00edf73f07bdcecc6d.png",
+    "static/media/kakaostory.png": "/kakao_2023/static/media/kakaostory.572f3ce5bf10fbdaac9d.png",
+    "static/media/bg_default.png": "/kakao_2023/static/media/bg_default.82687b4e75ad8b89fa96.png",
+    "index.html": "/kakao_2023/index.html",
+    "main.8ef14800.css.map": "/kakao_2023/static/css/main.8ef14800.css.map",
+    "main.b6489a1b.js.map": "/kakao_2023/static/js/main.b6489a1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a12c144.css",
-    "static/js/main.c55795f2.js"
+    "static/css/main.8ef14800.css",
+    "static/js/main.b6489a1b.js"
   ]
 }
