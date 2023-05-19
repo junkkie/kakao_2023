@@ -65,15 +65,21 @@ function MyChats({chat}) {
         </>
       ):(
       <>
-      {chat.text !== "" && (
         <>         
           {chat.attachmentUrl && 
+          <>
             <img className="img" src={chat.attachmentUrl} alt="" width="50px" height="50px" />
+            <span class="chat_time">{newTime}</span>
+          </>
           }
-          <span className="chat" onClick={toggleEditing}>{chat.text}</span>
-          <span class="chat_time">{newTime}</span>
+          {chat.text !== "" && (
+            <>
+            <span className="chat" onClick={toggleEditing}>{chat.text}</span>
+            <span class="chat_time">{newTime}</span>
+            </>
+          )}
+
         </>
-      )}
       </>
       )}
     </div>

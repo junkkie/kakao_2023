@@ -161,7 +161,7 @@ function Chatroom({userObj, me}) {
                 <div className='prevImg'>
                   <img src={attachment} alt='' style={{backgroundImage:attachment}} />
                   <div className='delete_photo' onClick={deleteAttachment}>
-                    <span>사진 전송 취소</span>
+                    <span>취소</span>
                   </div>
                 </div>
               )}
