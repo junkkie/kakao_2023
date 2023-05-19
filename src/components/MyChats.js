@@ -68,7 +68,7 @@ function MyChats({chat}) {
         <>         
           {chat.attachmentUrl && 
           <>
-            <img className="img" src={chat.attachmentUrl} alt="" width="50px" height="50px" />
+            <img className="img" src={chat.attachmentUrl} alt="" width="50px" height="50px" onClick={toggleEditing} />
             <span class="chat_time">{newTime}</span>
           </>
           }
@@ -78,7 +78,6 @@ function MyChats({chat}) {
             <span class="chat_time">{newTime}</span>
             </>
           )}
-
         </>
       </>
       )}
